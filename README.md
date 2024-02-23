@@ -21,7 +21,8 @@ A.X= 0
 I created A by following the formula in the assignment sheet 
 A=[(x_1 P_1^3T-P_1^1T@y_1 P_1^3T-P_1^2T@x_2 P_2^3T-P_2^1T@y_2 P_2^3T-P_2^2T )]
 Here the P_i^j for i we have two values, i = 1 or 2 for camera matrix〖 P〗_1 or P_2. The j means the j^th row of e camera projection matrix. Knowing that P_1 and P_2  were 3×4 matrixes we have 4 rows in A and the columns are for example x_1 which is a scalar. P_1^3T  is 3rd row P_1 matrix.  The 3rd row of  3×4 matrix will be dimension 1×4. So row one for example will be scalar × a 1×4 matrix minus first row P_1 which is a 1×4 matrix.  So the result is a 1×4 matrix. We have for them stacked in A.  So A turned out to be 4×4 matrix.
-## Step 5 - Singular Value Decomposition and Dehomogenization: We know that 
+## Step 5 
+Singular Value Decomposition and Dehomogenization: We know that 
 A=UDV^T
 We can obtain V matrix by doing Singular Value Decomposition of matrix A that we have obtained above.  MatLab has built in library for this which I utilized:
 [~,~,V] = svd(A)
@@ -30,7 +31,7 @@ V is a homogeneous 4×1 vector representing the 3D point M, corresponding to the
     pntcloud(:,i) = M_homogeneous_i(1:3) / M_homogeneous_i(4);
 ## Step 6
 Repeat from Step 4 for all matching image points to create a 3D point cloud: I did this by placing all my code from steps 4 and 5 into a loop. The loop iterated from 1 to number of existing points in Pnts1 matrix. It then adds each i^th pntcloud to the i^th column of our pntclpud matrix. So the pntcloud are stores in a col by col basis ready for display.
-##Step 7
+## Step 7
 This was to Render the point cloud. Which the code was already provide.
 Challenges Encountered
 The main challenge for this project was understanding the resulting matrixes so that the matrix operations could have been handled properly during the pntcloud loop.  I did this by displaying the matrix sizes and making adjustments.
