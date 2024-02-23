@@ -2,9 +2,7 @@
 Reconstruction of a three-dimensional (3D) scene using information obtained from multiple two-dimensional (2D) images (In this exercise two images). The primary concept involves determining the 3D coordinates of points within a scene by intersecting their corresponding 2D projections captured from distinct viewpoints. 
 
 # Introduction
-In this assignment we were required to implement linear triangulation method.  Linear is used for the reconstruction of a three-dimensional (3D) scene using information obtained from multiple two-dimensional (2D) images (In this exercise two images). The primary concept involves determining the 3D coordinates of points within a scene by intersecting their corresponding 2D projections captured from distinct viewpoints. This method can be used 3D reconstruction applications
-Description of each step:
-	Iimplementation of linear triangulation method.  Linear is used for the reconstruction of a three-dimensional (3D) scene using information obtained from multiple two-dimensional (2D) images (In this exercise two images). The primary concept involves determining the 3D coordinates of points within a scene by intersecting their corresponding 2D projections captured from distinct viewpoints. This method can be used 3D reconstruction applications.
+Implementation of linear triangulation method.  Linear is used for the reconstruction of a three-dimensional (3D) scene using information obtained from multiple two-dimensional (2D) images (In this exercise two images). The primary concept involves determining the 3D coordinates of points within a scene by intersecting their corresponding 2D projections captured from distinct viewpoints. This method can be used 3D reconstruction applications.
 ## Step 1
 Feature Matching: This step was implemented by professor already but involves detection and aligning features (keypoints) within the images. Popular methods for feature alignment involve techniques such as SIFT (Scale-Invariant Feature Transform) or ORB (Oriented FAST and Rotated BRIEF).  The code had adopted detectORBFeatures.
 ## Step 2 
